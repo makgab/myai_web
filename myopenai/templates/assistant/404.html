@@ -1,0 +1,16 @@
+{% extends 'assistant/base.html' %}
+
+{% block title %} 404 {% endblock %}
+
+{% block content %}
+<div class="row justify-content-center my-4">
+
+    <div class="col-md-7 mt-4">
+        <h1>Oldal nem található!</h1>
+        <p>Nézd meg az internet kapcsolatod ill. az API-KEY be van-e állítva.</p>
+        <a href="{% url 'home' %}" class="btn btn-secondary">Kezdés</a>
+    </div>
+
+</div>
+
+{% endblock %}
