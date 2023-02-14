@@ -12,7 +12,7 @@
 
             <div class="card-body">
 
-             <pre>Hello, kérdezhetsz? :)</pre>
+             <pre>Hello, kérdezhetsz. :)</pre>
 
               <form action="." method="POST">
                 <!-- this secures the form from malicious attacks during submission -->
@@ -21,16 +21,14 @@
                 <input class="form-control mb-2" required type="text" autofocus="autofocus" name="prompt" value="{{ prompt }}" id="">
 
                 <button class="btn btn-success fw-bold" type="submit">
-                     GENARATE
+                     KÜLDÉS
                 </button>
 
               </form>
-            
+
               <hr>
 
-              <pre>
-                {{ formatted_response }}
-              </pre>
+              <textarea rows="15" cols="90"> {{ formatted_response }} </textarea>
 
             </div>
 
